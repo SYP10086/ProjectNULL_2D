@@ -1,3 +1,5 @@
 # ProjectNULL_2D
 ## 横板跳跃解密项目
-PuzzleAdventure_Platform
+
+-目前灵感
+  -重力方向
