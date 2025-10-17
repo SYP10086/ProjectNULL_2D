@@ -79,7 +79,7 @@ void freeResult(GeyserData* head) {
     }
 }
 
-//int main() 
+int main() 
     {
     int pressures[100];
     int pressure, i = 0;
