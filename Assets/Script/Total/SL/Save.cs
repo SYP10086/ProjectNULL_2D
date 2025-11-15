@@ -18,8 +18,9 @@ public static class Save
     public static void SavePlayer(int SaveNumber)
     {
         PlayerPrefs.SetString($"Place{SaveNumber}", InputField.Place);
-        PlayerPrefs.SetFloat($"Healthy{SaveNumber}", PlayerMain.Healthy);
-        PlayerPrefs.SetFloat($"Stamina{SaveNumber}", PlayerMain.Stamina);
+        PlayerPrefs.SetFloat($"healthy{SaveNumber}", PlayerMain.healthy);
+        PlayerPrefs.SetFloat($"stamina{SaveNumber}", PlayerMain.stamina);
+        PlayerPrefs.SetFloat($"attackDamage{SaveNumber}", PlayerMain.attackDamage);
         PlayerPrefs.SetFloat($"transform.position.x{SaveNumber}", PlayerMain.transform.position.x);
         PlayerPrefs.SetFloat($"transform.position.y{SaveNumber}", PlayerMain.transform.position.y);
         PlayerPrefs.SetString($"time{SaveNumber}", " "+System.DateTime.Now);

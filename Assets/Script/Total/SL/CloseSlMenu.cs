@@ -6,12 +6,21 @@ public class CloseSlMenu : AllNeed
 {
     [SerializeField] bool SenceChange = false;
 
+    CloseSlMenu()
+    {
+        Event.LocalChange+= new MyDel(HideSLmenu);
+    }
+    ~CloseSlMenu()
+    {
+        Event.LocalChange -= new MyDel(HideSLmenu);
+    }
     void Update()
     {
 
         if (!SenceChange)
         {
-            Event.SpeedRe();
+            if(Event.SpeedRe!=null)
+                Event.SpeedRe();
             SenceChange = true;
             HideSLmenu(); 
         }
