@@ -12,6 +12,5 @@ public class Item : ScriptableObject
     public int itemHeld;//物品的持有数量
     [TextArea]//让物品描述可以无限长，而不是仅局限于一行
     public string itemInfomation;//物品描述
-
     public bool equip;//是否装备
 }

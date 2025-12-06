@@ -29,7 +29,6 @@ public class Save0 : MonoBehaviour
             InputField.inputFieldPrefab.SetActive(true);
             Number = i;
             SetInput();
-
         }
     }
     void SetInput()

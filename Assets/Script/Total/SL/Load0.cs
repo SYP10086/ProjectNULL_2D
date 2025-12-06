@@ -29,6 +29,7 @@ public class Load0 : MonoBehaviour
             {
                 int Number = int.Parse(button.name.Substring(4, 1));
                 Load.LoadPlayer(Number);
+                Load.LoadItem(Number);
                 if(InputField.Place != "NoThisPlace"&& InputField.Place!= Getname(scene))
                 SceneManager.LoadScene(InputField.Place);
                 PlayerMain.initLocation = false;
