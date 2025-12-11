@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
@@ -8,7 +9,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMain : MonoBehaviour
 {
-
+    public bool haveGravity = false;//控制有无重力,地面laywer为Wall
+    public float jumpSpeed = 5;
     public static float healthy = 100;
     public static float nowHealthy = 100;
     public static float stamina = 100;
@@ -109,10 +111,96 @@ public class PlayerMain : MonoBehaviour
     }
     private void LateUpdate()
     {
+        rb.gravityScale = haveGravity ? 1 : 0;
         Move();
+        MoveWithGravity();
+    }
+    void MoveWithGravity()
+    {
+        if (!haveGravity) return;
+        float xv = Input.GetAxis("Horizontal");
+        Vector3 movement = new Vector3(xv, 0, 0);
+        if (movement.magnitude > 1)
+        {
+            movement.Normalize();
+        }
+        xv = movement.x;
+        if (nowStamina < 0)
+        {
+            canShifit = false;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && nowStamina > 0 && canShifit)
+        {
+            rb.velocity = new Vector2(xv * speed * shiftPower, rb.velocity.y);
+            nowStamina -= Time.deltaTime * staminaDecrease;
+            ReTime = 0;
+        }
+        else if (!canShifit)
+        {
+            rb.velocity = new Vector2(xv * speed * shiftLose, rb.velocity.y);
+            if (nowStamina < stamina)
+                nowStamina += Time.deltaTime * staminaEDIncrease;
+            else
+            {
+                canShifit = true;
+                stamina = nowStamina;
+            }
+        }
+        else if (xv == 0)
+        {
+            if (ReTime <= 100)
+                ReTime += Time.deltaTime;
+            if (ReTime >= ReWait * 2)
+            {
+                if (nowStamina < stamina)
+                    nowStamina += Time.deltaTime * staminaIncrease * 2;
+                else
+                {
+                    stamina = nowStamina;
+                }
+            }
+            else if (ReTime >= ReWait)
+            {
+                if (nowStamina < stamina)
+                    nowStamina += Time.deltaTime * staminaIncrease * 1.1f;
+                else
+                {
+                    stamina = nowStamina;
+                }
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector2(xv * speed, rb.velocity.y);
+            if (ReTime <= 100)
+                ReTime += Time.deltaTime;
+            if (ReTime >= ReWait)
+            {
+                ReTime = ReWait;
+                if (nowStamina < stamina)
+                    nowStamina += Time.deltaTime * staminaIncrease * 0.9f;
+                else
+                {
+                    stamina = nowStamina;
+                }
+            }
+        }
+        //Jump
+        Collider2D collider=GetComponent<Collider2D>();
+        RaycastHit2D hit1 = Physics2D.Raycast(transform.position+new Vector3(collider.bounds.size.x/2,0,0), new Vector2(0, -1), collider.bounds.size.y / 2 + 0.2f, LayerMask.GetMask("Wall"));
+        RaycastHit2D hit2 = Physics2D.Raycast(transform.position - new Vector3(collider.bounds.size.x / 2, 0, 0), new Vector2(0, -1), collider.bounds.size.y/2+0.2f, 0, 0, LayerMask.GetMask("Wall"));
+        if (hit1|| hit2)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + jumpSpeed);
+            }
+        }
+
     }
     private void Move()
     {
+        if (haveGravity) return;
         float xv = Input.GetAxis("Horizontal"), yv = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(xv, 0, yv);
         if (movement.magnitude > 1)
