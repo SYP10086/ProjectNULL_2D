@@ -48,6 +48,7 @@ public class InputField : Save0
             scene = SceneManager.GetActiveScene();
             Place = scene.name;
             Save.SavePlayer(Number);
+            Save.SaveItem(Number);
             //Save0.buttonText.text = PlayerPrefs.GetString($"saveName{Save0.Number}", "Empty") + PlayerPrefs.GetString($"time{Save0.Number}", "");
             saveWorking = false;
             showInput = false;
