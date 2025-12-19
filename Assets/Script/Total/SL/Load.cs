@@ -17,6 +17,7 @@ public static  class Load
                 InputField.Place = PlayerPrefs.GetString($"Place{SaveNumber}", "NoThisPlace");
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
                 PlayerMain.healthy = PlayerPrefs.GetFloat($"Healthy{SaveNumber}", 100f);
                 PlayerMain.stamina = PlayerPrefs.GetFloat($"Stamina{SaveNumber}", 100f);
                 PlayerMain.y =PlayerPrefs.GetFloat($"transform.position.y{SaveNumber}", 0);
@@ -25,6 +26,12 @@ public static  class Load
     public static void LoadItem(int SaveNumber)
     {
         Event.Load(SaveNumber);
+=======
+                PlayerMain.Healthy = PlayerPrefs.GetFloat($"Healthy{SaveNumber}", 100f);
+                PlayerMain.Stamina = PlayerPrefs.GetFloat($"Stamina{SaveNumber}", 100f);
+                PlayerMain.y =PlayerPrefs.GetFloat($"transform.position.y{SaveNumber}", 0);
+                PlayerMain.x = PlayerPrefs.GetFloat($"transform.position.x{SaveNumber}", 0);
+>>>>>>> Stashed changes
 =======
                 PlayerMain.Healthy = PlayerPrefs.GetFloat($"Healthy{SaveNumber}", 100f);
                 PlayerMain.Stamina = PlayerPrefs.GetFloat($"Stamina{SaveNumber}", 100f);

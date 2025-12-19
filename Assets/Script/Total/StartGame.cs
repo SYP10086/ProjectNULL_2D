@@ -11,7 +11,11 @@ public class StartGame : AllNeed
         SceneManager.LoadScene("Sence1");
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         Event.Start();
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes

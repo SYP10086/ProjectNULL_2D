@@ -124,7 +124,10 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &11257663
@@ -496,6 +499,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -527,7 +533,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 2.98, y: 2.77, z: 0}
+=======
+  m_LocalPosition: {x: 5.3, y: 2.77, z: 0}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 5.3, y: 2.77, z: 0}
 >>>>>>> Stashed changes
@@ -593,7 +603,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &92375916
@@ -849,6 +862,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -924,8 +940,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: -1662053919
   m_SortingLayer: 3
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -948,7 +969,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &119616925
@@ -1036,6 +1060,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1088,9 +1115,12 @@ Transform:
   - {fileID: 74648588}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - {fileID: 1950939921}
@@ -1855,6 +1885,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -1915,8 +1948,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 0
   m_SortingLayer: 0
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -1954,7 +1992,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &504661013
@@ -2042,6 +2083,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2073,8 +2117,13 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 2.7229, y: -3.7017, z: 0}
   m_LocalScale: {x: 20.811897, y: 18.549768, z: 1}
+=======
+  m_LocalPosition: {x: 4.8675, y: -3.7017, z: 0}
+  m_LocalScale: {x: 25.100748, y: 18.549768, z: 1}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 4.8675, y: -3.7017, z: 0}
   m_LocalScale: {x: 25.100748, y: 18.549768, z: 1}
@@ -2141,7 +2190,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &539939095
@@ -2817,6 +2869,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -2877,8 +2932,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: -1662053919
   m_SortingLayer: 3
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -2910,7 +2970,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 10.78, y: 4.17, z: 0}
+=======
+  m_LocalPosition: {x: 14.85, y: 3.97, z: 0}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 14.85, y: 3.97, z: 0}
 >>>>>>> Stashed changes
@@ -2979,8 +3043,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: -1662053919
   m_SortingLayer: 3
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -3012,7 +3081,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 10.74, y: 1.96, z: 0}
+=======
+  m_LocalPosition: {x: 14.84, y: 1.83, z: 0}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 14.84, y: 1.83, z: 0}
 >>>>>>> Stashed changes
@@ -3026,7 +3099,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &994524472
@@ -3282,6 +3358,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -3357,8 +3436,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: -1662053919
   m_SortingLayer: 3
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -3381,7 +3465,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1075164959
@@ -4141,6 +4228,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4230,7 +4320,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1267022111
@@ -4402,6 +4495,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -4477,8 +4573,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: -1662053919
   m_SortingLayer: 3
+=======
+  m_SortingLayerID: -798370555
+  m_SortingLayer: 4
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
   m_SortingLayer: 4
@@ -4501,7 +4602,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1403863428
@@ -5093,6 +5197,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -5124,8 +5231,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 10.7606, y: -2.7386, z: 0}
   m_LocalScale: {x: 4.770637, y: 16.628605, z: 1}
+=======
+  m_LocalPosition: {x: 14.86, y: -1.9167, z: 0}
+  m_LocalScale: {x: 4.770637, y: 14.985699, z: 1}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 14.86, y: -1.9167, z: 0}
   m_LocalScale: {x: 4.770637, y: 14.985699, z: 1}
@@ -5192,7 +5304,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1532825841
@@ -6204,6 +6319,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6235,8 +6353,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 2.7324, y: -2.07, z: 0}
   m_LocalScale: {x: 20.831732, y: 5.1989727, z: 1}
+=======
+  m_LocalPosition: {x: 4.7841, y: -2.07, z: 0}
+  m_LocalScale: {x: 24.935583, y: 5.1989727, z: 1}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: 4.7841, y: -2.07, z: 0}
   m_LocalScale: {x: 24.935583, y: 5.1989727, z: 1}
@@ -6303,7 +6426,10 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1792373156
@@ -6391,6 +6517,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -6488,7 +6617,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!1 &1879472845
@@ -7341,6 +7473,9 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -7358,7 +7493,10 @@ SceneRoots:
   - {fileID: 1061961192}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - {fileID: 28868958}
@@ -7367,6 +7505,9 @@ SceneRoots:
   - {fileID: 2067593995}
   - {fileID: 51633721}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
