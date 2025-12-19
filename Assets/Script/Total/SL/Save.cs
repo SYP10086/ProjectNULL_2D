@@ -18,8 +18,13 @@ public static class Save
     public static void SavePlayer(int SaveNumber)
     {
         PlayerPrefs.SetString($"Place{SaveNumber}", InputField.Place);
+<<<<<<< Updated upstream
         PlayerPrefs.SetFloat($"Healthy{SaveNumber}", PlayerMain.healthy);
         PlayerPrefs.SetFloat($"Stamina{SaveNumber}", PlayerMain.stamina);
+=======
+        PlayerPrefs.SetFloat($"Healthy{SaveNumber}", PlayerMain.Healthy);
+        PlayerPrefs.SetFloat($"Stamina{SaveNumber}", PlayerMain.Stamina);
+>>>>>>> Stashed changes
         PlayerPrefs.SetFloat($"transform.position.x{SaveNumber}", PlayerMain.transform.position.x);
         PlayerPrefs.SetFloat($"transform.position.y{SaveNumber}", PlayerMain.transform.position.y);
         PlayerPrefs.SetString($"time{SaveNumber}", " "+System.DateTime.Now);
