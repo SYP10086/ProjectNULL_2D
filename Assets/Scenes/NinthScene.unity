@@ -194,7 +194,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -282,7 +286,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -354,7 +362,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1191220717
+=======
+  m_SortingLayerID: -798370555
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
 >>>>>>> Stashed changes
@@ -542,7 +554,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -630,7 +646,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -718,7 +738,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1793238201
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 2
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -898,7 +922,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -986,7 +1014,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1793238201
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 2
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -1058,7 +1090,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1191220717
+=======
+  m_SortingLayerID: -798370555
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
 >>>>>>> Stashed changes
@@ -1217,7 +1253,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1793238201
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 2
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -1305,7 +1345,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes
@@ -1393,7 +1437,11 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 482679251
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayer: 1
+=======
+  m_SortingLayer: 0
+>>>>>>> Stashed changes
 =======
   m_SortingLayer: 0
 >>>>>>> Stashed changes

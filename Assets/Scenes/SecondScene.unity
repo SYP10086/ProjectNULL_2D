@@ -193,17 +193,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.2830189, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -215,7 +221,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &47203361
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +561,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &191152362
 GameObject:
@@ -624,17 +636,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.30817598, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -646,7 +664,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &208115872
+=======
+--- !u!1 &196765691
+>>>>>>> Stashed changes
 =======
 --- !u!1 &196765691
 >>>>>>> Stashed changes
@@ -658,15 +680,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 208115873}
   - component: {fileID: 208115874}
   m_Layer: 0
   m_Name: building (3)
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 196765692}
   - component: {fileID: 196765693}
   m_Layer: 0
   m_Name: rock ground_3 (14)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -674,7 +702,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &208115873
+=======
+--- !u!4 &196765692
+>>>>>>> Stashed changes
 =======
 --- !u!4 &196765692
 >>>>>>> Stashed changes
@@ -683,6 +715,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 208115872}
   serializedVersion: 2
@@ -695,6 +728,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &208115874
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 196765691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -705,6 +740,9 @@ Transform:
   m_Father: {fileID: 1360079807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &196765693
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -712,7 +750,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 208115872}
+=======
+  m_GameObject: {fileID: 196765691}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 196765691}
 >>>>>>> Stashed changes
@@ -730,7 +772,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -752,12 +798,15 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.48427665, g: 0.37766498, b: 0.25127557, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 1
@@ -1016,6 +1065,9 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -1027,7 +1079,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!61 &325562630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1157,6 +1212,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &358953098
 GameObject:
@@ -1217,7 +1275,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1191220717
+=======
+  m_SortingLayerID: -798370555
+>>>>>>> Stashed changes
 =======
   m_SortingLayerID: -798370555
 >>>>>>> Stashed changes
@@ -1244,7 +1306,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -6.74, y: -1.06, z: 0}
+=======
+  m_LocalPosition: {x: -3.66, y: -1.06, z: 0}
+>>>>>>> Stashed changes
 =======
   m_LocalPosition: {x: -3.66, y: -1.06, z: 0}
 >>>>>>> Stashed changes
@@ -1339,7 +1405,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &540714450
+=======
+--- !u!1 &402646905
+>>>>>>> Stashed changes
 =======
 --- !u!1 &402646905
 >>>>>>> Stashed changes
@@ -1351,15 +1421,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 540714451}
   - component: {fileID: 540714452}
   m_Layer: 0
   m_Name: building (1)
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 402646906}
   - component: {fileID: 402646907}
   m_Layer: 0
   m_Name: rock ground_3 (25)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1367,7 +1443,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &540714451
+=======
+--- !u!4 &402646906
+>>>>>>> Stashed changes
 =======
 --- !u!4 &402646906
 >>>>>>> Stashed changes
@@ -1376,6 +1456,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 540714450}
   serializedVersion: 2
@@ -1388,6 +1469,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &540714452
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 402646905}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -1398,6 +1481,9 @@ Transform:
   m_Father: {fileID: 1360079807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &402646907
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1405,7 +1491,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 540714450}
+=======
+  m_GameObject: {fileID: 402646905}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 402646905}
 >>>>>>> Stashed changes
@@ -1423,7 +1513,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -1445,12 +1539,15 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.48427665, g: 0.37766498, b: 0.25127557, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 1
@@ -1541,6 +1638,9 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -1552,7 +1652,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!61 &421497425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2664,6 +2767,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &807479671
 GameObject:
@@ -2736,17 +2842,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.13836467, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -2828,17 +2940,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.26415092, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -2850,7 +2968,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &829359007
+=======
+--- !u!1 &875154122
+>>>>>>> Stashed changes
 =======
 --- !u!1 &875154122
 >>>>>>> Stashed changes
@@ -2862,15 +2984,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 829359008}
   - component: {fileID: 829359009}
   m_Layer: 0
   m_Name: building (4)
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 875154123}
   - component: {fileID: 875154124}
   m_Layer: 0
   m_Name: house4
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2878,7 +3006,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &829359008
+=======
+--- !u!4 &875154123
+>>>>>>> Stashed changes
 =======
 --- !u!4 &875154123
 >>>>>>> Stashed changes
@@ -2887,6 +3019,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 829359007}
   serializedVersion: 2
@@ -2899,6 +3032,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &829359009
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 875154122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -2909,6 +3044,9 @@ Transform:
   m_Father: {fileID: 655900175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &875154124
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2916,7 +3054,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 829359007}
+=======
+  m_GameObject: {fileID: 875154122}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 875154122}
 >>>>>>> Stashed changes
@@ -2934,7 +3076,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -2956,12 +3102,15 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.48427665, g: 0.37766498, b: 0.25127557, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1280720917
   m_SortingLayer: 2
   m_SortingOrder: 1
@@ -3304,6 +3453,9 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -3315,7 +3467,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!61 &952690019
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3529,6 +3684,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1018252540
 GameObject:
@@ -3568,8 +3726,13 @@ Transform:
   m_GameObject: {fileID: 1018252540}
   serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.844036, y: 0, z: 0}
+>>>>>>> Stashed changes
 =======
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.844036, y: 0, z: 0}
@@ -3579,6 +3742,7 @@ Transform:
   m_Children:
   - {fileID: 1585051580}
   - {fileID: 1502748330}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - {fileID: 1761622450}
   - {fileID: 540714451}
@@ -3590,12 +3754,17 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1341022332
 =======
+=======
+>>>>>>> Stashed changes
   - {fileID: 674038472}
   - {fileID: 655900175}
   - {fileID: 1707600647}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100505926
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -3605,15 +3774,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 1341022333}
   - component: {fileID: 1341022334}
   m_Layer: 0
   m_Name: building (2)
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1100505927}
   - component: {fileID: 1100505928}
   m_Layer: 0
   m_Name: rock ground_1 (2)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3621,7 +3796,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &1341022333
+=======
+--- !u!4 &1100505927
+>>>>>>> Stashed changes
 =======
 --- !u!4 &1100505927
 >>>>>>> Stashed changes
@@ -3630,6 +3809,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1341022332}
   serializedVersion: 2
@@ -3642,6 +3822,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1341022334
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1100505926}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -3652,6 +3834,9 @@ Transform:
   m_Father: {fileID: 1360079807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1100505928
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3659,7 +3844,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1341022332}
+=======
+  m_GameObject: {fileID: 1100505926}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 1100505926}
 >>>>>>> Stashed changes
@@ -3677,7 +3866,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -3699,6 +3892,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
@@ -3709,6 +3903,8 @@ SpriteRenderer:
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 2
@@ -3718,6 +3914,9 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5.44, y: 5.19}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -3725,7 +3924,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1502009252
+=======
+--- !u!1 &1110068282
+>>>>>>> Stashed changes
 =======
 --- !u!1 &1110068282
 >>>>>>> Stashed changes
@@ -3737,16 +3940,22 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 1502009253}
   - component: {fileID: 1502009254}
   m_Layer: 0
   m_Name: center building
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1110068283}
   - component: {fileID: 1110068284}
   - component: {fileID: 1110068285}
   m_Layer: 0
   m_Name: kongqiqiang (13)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3754,7 +3963,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &1502009253
+=======
+--- !u!4 &1110068283
+>>>>>>> Stashed changes
 =======
 --- !u!4 &1110068283
 >>>>>>> Stashed changes
@@ -3763,6 +3976,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1502009252}
   serializedVersion: 2
@@ -3775,6 +3989,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1502009254
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1110068282}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3785,6 +4001,9 @@ Transform:
   m_Father: {fileID: 1707600647}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1110068284
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3792,7 +4011,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1502009252}
+=======
+  m_GameObject: {fileID: 1110068282}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 1110068282}
 >>>>>>> Stashed changes
@@ -3810,7 +4033,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -3832,17 +4059,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.42138356, g: 0.17625967, b: 0.14443643, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: -1990936125
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 0.078431375, a: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -3854,7 +4087,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!61 &1110068285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5282,6 +5518,9 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1502748329
 GameObject:
@@ -5319,6 +5558,10 @@ Transform:
   - {fileID: 809180075}
   - {fileID: 23744068}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  - {fileID: 1360079807}
+>>>>>>> Stashed changes
 =======
   - {fileID: 1360079807}
 >>>>>>> Stashed changes
@@ -5337,6 +5580,10 @@ GameObject:
   - component: {fileID: 1505099276}
   - component: {fileID: 1505099273}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  - component: {fileID: 1505099277}
+>>>>>>> Stashed changes
 =======
   - component: {fileID: 1505099277}
 >>>>>>> Stashed changes
@@ -5391,7 +5638,11 @@ Camera:
   field of view: 60
   orthographic: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   orthographic size: 5
+=======
+  orthographic size: 3.0947318
+>>>>>>> Stashed changes
 =======
   orthographic size: 3.0947318
 >>>>>>> Stashed changes
@@ -5442,7 +5693,10 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: -10}
   smoothSpeed: 5
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!114 &1505099277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5487,6 +5741,9 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1508441826
 GameObject:
@@ -5559,17 +5816,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.26415092, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -5581,7 +5844,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1509342422
 GameObject:
   m_ObjectHideFlags: 0
@@ -5750,6 +6016,9 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1585051579
 GameObject:
@@ -5836,7 +6105,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1599634700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,6 +6654,9 @@ Transform:
   - {fileID: 1599634701}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1667920230
 GameObject:
@@ -6454,17 +6729,23 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 482679251
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.11949676, g: 0, b: 0, a: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -6476,7 +6757,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1761622449
+=======
+--- !u!1 &1692331770
+>>>>>>> Stashed changes
 =======
 --- !u!1 &1692331770
 >>>>>>> Stashed changes
@@ -6488,15 +6773,21 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 1761622450}
   - component: {fileID: 1761622451}
   m_Layer: 0
   m_Name: building
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 1692331771}
   - component: {fileID: 1692331772}
   m_Layer: 0
   m_Name: rock ground_2 (1)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6504,7 +6795,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &1761622450
+=======
+--- !u!4 &1692331771
+>>>>>>> Stashed changes
 =======
 --- !u!4 &1692331771
 >>>>>>> Stashed changes
@@ -6513,6 +6808,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1761622449}
   serializedVersion: 2
@@ -6525,6 +6821,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1761622451
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1692331770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -6535,6 +6833,9 @@ Transform:
   m_Father: {fileID: 1360079807}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1692331772
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6542,7 +6843,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1761622449}
+=======
+  m_GameObject: {fileID: 1692331770}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 1692331770}
 >>>>>>> Stashed changes
@@ -6560,7 +6865,11 @@ SpriteRenderer:
   m_RendererPriority: 0
   m_Materials:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+>>>>>>> Stashed changes
 =======
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
 >>>>>>> Stashed changes
@@ -6582,12 +6891,15 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingLayerID: 1793238201
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.48427665, g: 0.37766498, b: 0.25127557, a: 1}
 =======
+=======
+>>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 2
@@ -6981,6 +7293,9 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
@@ -6992,7 +7307,10 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!61 &1722013128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8658,6 +8976,9 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -8667,6 +8988,11 @@ SceneRoots:
   - {fileID: 358953100}
   - {fileID: 1018252542}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  - {fileID: 1806412536}
+  - {fileID: 1663597506}
+>>>>>>> Stashed changes
 =======
   - {fileID: 1806412536}
   - {fileID: 1663597506}
