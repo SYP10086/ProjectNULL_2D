@@ -122,14 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &3453043
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,13 +374,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &116638155
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,14 +421,6 @@ Transform:
   - {fileID: 1206455601}
   - {fileID: 725653497}
   - {fileID: 1490495887}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   - {fileID: 1096086307}
   - {fileID: 487409647}
   m_Father: {fileID: 0}
@@ -2326,13 +2303,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1642761688}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &725653496
@@ -2361,23 +2331,8 @@ Transform:
   m_GameObject: {fileID: 725653496}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 4.8489, y: 8.095, z: 0}
-  m_LocalScale: {x: 13.359114, y: 10.702347, z: 1}
-=======
   m_LocalPosition: {x: 4.8489, y: 8.0328, z: 0}
   m_LocalScale: {x: 13.359114, y: 10.578199, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 4.8489, y: 8.0328, z: 0}
-  m_LocalScale: {x: 13.359114, y: 10.578199, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 4.8489, y: 8.0328, z: 0}
-  m_LocalScale: {x: 13.359114, y: 10.578199, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 116638157}
@@ -2420,31 +2375,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 1793238201
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.91194963, g: 0.4200674, b: 0, a: 1}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.23899364, g: 0.11259737, b: 0.0052608266, a: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2454,14 +2389,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &737085689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3974,13 +3901,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1042917805
 GameObject:
   m_ObjectHideFlags: 0
@@ -4036,19 +3956,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 1191220717
-=======
   m_SortingLayerID: -798370555
->>>>>>> Stashed changes
-=======
-  m_SortingLayerID: -798370555
->>>>>>> Stashed changes
-=======
-  m_SortingLayerID: -798370555
->>>>>>> Stashed changes
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -4103,23 +4011,8 @@ Transform:
   m_GameObject: {fileID: 1047967929}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 3.4677, y: -2.42, z: 0}
-  m_LocalScale: {x: 22.396198, y: 2.4387, z: 1}
-=======
   m_LocalPosition: {x: 3.4677, y: -2.6369, z: 0}
   m_LocalScale: {x: 22.396198, y: 2.8725445, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 3.4677, y: -2.6369, z: 0}
-  m_LocalScale: {x: 22.396198, y: 2.8725445, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 3.4677, y: -2.6369, z: 0}
-  m_LocalScale: {x: 22.396198, y: 2.8725445, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 116638157}
@@ -4162,31 +4055,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 482679251
-  m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.18867922, g: 0, b: 0, a: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4196,14 +4069,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1096086306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4565,13 +4430,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1206455600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,14 +4514,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1207796378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,13 +5606,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1490495886
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,31 +5676,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 1793238201
-  m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.91194963, g: 0.4200674, b: 0, a: 1}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.24528301, g: 0.1126407, b: 0, a: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5867,14 +5690,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1498425875
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,13 +6194,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1603035551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6412,23 +6220,8 @@ Transform:
   m_GameObject: {fileID: 1603035551}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_LocalPosition: {x: 13.6496, y: 4.6349, z: 0}
-  m_LocalScale: {x: 4.3936024, y: 16.548323, z: 1}
-=======
   m_LocalPosition: {x: 13.6496, y: 4.615, z: 0}
   m_LocalScale: {x: 4.3936024, y: 17.371193, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 13.6496, y: 4.615, z: 0}
-  m_LocalScale: {x: 4.3936024, y: 17.371193, z: 1}
->>>>>>> Stashed changes
-=======
-  m_LocalPosition: {x: 13.6496, y: 4.615, z: 0}
-  m_LocalScale: {x: 4.3936024, y: 17.371193, z: 1}
->>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 116638157}
@@ -6471,31 +6264,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 482679251
-  m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_SortingLayerID: 1022205453
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.23270428, g: 0, b: 0, a: 1}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6597,14 +6370,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &1642761687
 GameObject:
   m_ObjectHideFlags: 0
@@ -8033,13 +7798,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &2022869754
 GameObject:
   m_ObjectHideFlags: 0
@@ -8095,19 +7853,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  m_SortingLayerID: 1191220717
-=======
   m_SortingLayerID: -798370555
->>>>>>> Stashed changes
-=======
-  m_SortingLayerID: -798370555
->>>>>>> Stashed changes
-=======
-  m_SortingLayerID: -798370555
->>>>>>> Stashed changes
   m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -8136,14 +7882,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1 &2083145988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8228,13 +7966,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8243,22 +7974,7 @@ SceneRoots:
   - {fileID: 116638157}
   - {fileID: 2022869756}
   - {fileID: 1042917807}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   - {fileID: 850622331}
   - {fileID: 770393042}
   - {fileID: 719760134}
   - {fileID: 1366805946}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
