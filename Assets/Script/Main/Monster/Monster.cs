@@ -51,18 +51,19 @@ public class Monster : MonoBehaviour
             }
         }
     }
-    Monster()
+    public Monster()
     {
         Event.CleanSpeed += new MyDel(SpeedClear);
         Event.SpeedRe += new MyDel(SpeedRe);
         Event.Attack += new MyStrFloat(Hit);
-        //Event.LocalChange += new MyDel(Init);
+        Event.LocalChange += new MyDel(Init);
     }
     ~Monster()
     {
         Event.CleanSpeed -= new MyDel(SpeedClear);
         Event.SpeedRe -= new MyDel(SpeedRe);
         Event.Attack -= new MyStrFloat(Hit);
+        Event.LocalChange -= new MyDel(Init);
     }
     void Start()
     {
@@ -82,11 +83,9 @@ public class Monster : MonoBehaviour
         Debug.DrawLine(rb.transform.position, Player.transform.position, Color.red);
         IfFindPlayer();
         SetTheScaleOfDetect();
-        
-        
         Attack();
     }
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         MoveTowerPlayer();
         AwayWall();
@@ -120,7 +119,6 @@ public class Monster : MonoBehaviour
         Vector3 dir = Player.transform.position - transform.position;
         float angle = (Vector3.SignedAngle(Vector3.left, dir, Vector3.forward) + 180);
         angle = Math.Abs(angle - transform.eulerAngles.z) > 360 - Math.Abs(angle - transform.eulerAngles.z) ? ((angle - transform.eulerAngles.z > 0) ? angle - transform.eulerAngles.z - 360 : angle - transform.eulerAngles.z + 360) : angle - transform.eulerAngles.z;
-        
         if ((angle > -1 && angle < 1 && Vector3.Distance(rb.transform.position, Player.transform.position) < 1.7f)|| attack)
         {
             attack = true;
@@ -130,7 +128,6 @@ public class Monster : MonoBehaviour
                 attack = false;
                 attackTime = 0;
             }
-
         }
     }
     void AwayWall()
@@ -201,7 +198,9 @@ public class Monster : MonoBehaviour
     }
     void IfFindPlayer()
     {
+        
         hit = Physics2D.Raycast(rb.transform.position, Player.transform.position- rb.transform.position, Mathf.Infinity, Wall +LayerMask.GetMask("Player"));
+
         if (hit) 
         {
             float angle = Vector3.Angle(Player.transform.position-transform.position , transform.right);

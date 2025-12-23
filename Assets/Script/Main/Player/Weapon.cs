@@ -37,7 +37,6 @@ public class Weapon : MonoBehaviour
         if (!inIt)
         {
             dir = new Vector3(Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).x,Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).y,0) - player.transform.position;
-            Debug.Log(dir);
             angle = Vector3.SignedAngle(Vector3.left, dir, Vector3.forward)+180;
             transform.localPosition =new Vector2(weaponDistance*(float)Math.Cos((angle+ attackAngle/2) * Mathf.Deg2Rad), weaponDistance*(float)Math.Sin((angle + attackAngle/2) * Mathf.Deg2Rad)) ;
             inIt = true;
@@ -51,7 +50,7 @@ public class Weapon : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (haveAttack || collision == null) return;
+        if (haveAttack || collision == null||collision.gameObject.layer != 6) return;
         float damage = PlayerMain.attackDamage + UnityEngine.Random.value * PlayerMain.attackDamage/10 * (UnityEngine.Random.value >= 0.5 ? 1 : -1);
         Event.Attack(collision.gameObject.name, damage);
         haveAttack = true;

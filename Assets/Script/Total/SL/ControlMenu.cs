@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 public class ControlMenu : AllNeed
 {
     static public bool SaveOrLoad;
+    ControlMenu()
+    {
+        Event.Death += new MyDel(OpenSLmenuInGameLoad);
+    }
+    ~ControlMenu()
+    {
+        Event.Death -= new MyDel(OpenSLmenuInGameLoad);
+    }
     public void CloseSLmenuInGame()
     {
         Save0.saveWorking = false;

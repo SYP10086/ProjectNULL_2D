@@ -11,7 +11,7 @@ public class CloseSlMenu : AllNeed
 
         if (!SenceChange)
         {
-            Event.SpeedRe();
+            Event.SpeedRe?.Invoke();
             SenceChange = true;
             HideSLmenu(); 
         }
