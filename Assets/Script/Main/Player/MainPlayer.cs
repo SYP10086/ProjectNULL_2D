@@ -63,7 +63,7 @@ public class PlayerMain : MonoBehaviour
         speed = speedthis;
         canShifit = true;
     }
-    void HealthLose(float damage)
+    public void HealthLose(float damage)
     {
         nowHealthy -= damage;
     }
