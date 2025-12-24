@@ -3,22 +3,76 @@ using UnityEngine;
 public class BasicPlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f; // 移动速度
-    private Rigidbody2D rb;
+    public KeyCode attackKey = KeyCode.J;
+    private Rigidbody2D rb2D;
+    private Animator anim;
+    private Vector2 movementInput;
+    private Vector2 lastMoveDir = Vector2.down;
+    private bool isMoving;
+    private bool isAttacking;
+
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>(); // 需给物体添加Rigidbody2D组件
+        rb2D = GetComponent<Rigidbody2D>(); 
+        anim = GetComponent<Animator>();
+        UpdateAnimDir(lastMoveDir);
+
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(attackKey) && !isAttacking){
+            Attack();
+        }
     }
 
     void FixedUpdate()
     {
-        // 读取ADWS输入（W=上，S=下，A=左，D=右）
-        float horizontal = Input.GetAxis("Horizontal"); // A=-1，D=1
-        float vertical = Input.GetAxis("Vertical"); // S=-1，W=1
 
-        // 计算移动方向（归一化避免斜向移动过快）
-        Vector2 moveDir = new Vector2(horizontal, vertical).normalized;
-        // 应用移动力
-        rb.velocity = moveDir * moveSpeed;
+        movementInput.x = Input.GetAxisRaw("Horizontal");
+        movementInput.y = Input.GetAxisRaw("Vertical");
+
+        movementInput = movementInput.normalized;
+        anim.SetFloat("Horizontal",movementInput.x);
+        anim.SetFloat("Vertical", movementInput.y);
+        anim.SetFloat("MoveSpeed", movementInput.magnitude);
+
+        rb2D.velocity = movementInput * moveSpeed;
+
+        bool isMoving = movementInput.magnitude > 0;
+        anim.SetBool("IsMoving", isMoving);
+        if(isMoving)
+        {
+            lastMoveDir = movementInput;
+            UpdateAnimDir(lastMoveDir);
+            //anim.SetFloat("Horizontal", lastMoveDir.x);
+            //anim.SetFloat("Vertical", lastMoveDir.y);
+        }
     }
+    private void LateUpdate()
+    {
+        if (!isMoving)
+        {
+            UpdateAnimDir(lastMoveDir);
+        }
+    }
+    private void Attack()
+    {
+        isAttacking = true;
+        anim.SetBool("IsAttacking",true);
+        Invoke("ResetAttackState", 1.0f);
+    }
+    private void ResetAttackState()
+    {
+        isAttacking = false;
+        anim.SetBool("IsAttacking", false);
+    }
+    private void UpdateAnimDir(Vector2 dir)
+    {
+        anim.SetFloat("Horizontal", lastMoveDir.x);
+        anim.SetFloat("Vertical", lastMoveDir.y);
+        anim.Update(0);
+
+    }
+
 }
