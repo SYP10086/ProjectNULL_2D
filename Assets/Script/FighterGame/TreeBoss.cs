@@ -11,7 +11,7 @@ public class TreeBoss : MonoBehaviour
 
     [Header("·¶Î§ÅäÖÃ")]
     public float wakeRange = 4f;           // ËÕĞÑ·¶Î§£¨±È¹¥»÷·¶Î§´ó£©
-    public float attackRange = 4f;         // ÆÕÍ¨¹¥»÷·¶Î§
+    public float attackRange = 8f;         // ÆÕÍ¨¹¥»÷·¶Î§
     public float normalAttackDamage = 10f; // ÆÕÍ¨¹¥»÷ÉËº¦
 
     [Header("¹¥»÷ÀäÈ´")]
@@ -99,7 +99,6 @@ public class TreeBoss : MonoBehaviour
         {
             TriggerDeathAnimation();
         }
-        Debug.Log("Bossµ±Ç°ÉúÃüÖµ"+currentHealth);
 
         
         

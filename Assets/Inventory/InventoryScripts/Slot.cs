@@ -14,23 +14,45 @@ public class Slot : MonoBehaviour
     public TMP_Text slotNum;//物品数量
 
     public GameObject ItemInSlot;
-    public string slotInfo;
-    //物品描述
+    public string slotInfo;//物品描述
+
+    
+
+    void Start()
+    {
+        // 初始隐藏物品显示
+        if (slotItem == null)
+        {
+            ItemInSlot.SetActive(false);
+        }
+    }
     public void ItemOnClicked()
     {
+        // 更新物品信息显示
         InventoryManager.UpdateItemInfo(slotInfo);
+
+        // 记录当前选中的物品和槽位ID到背包管理器
+        InventoryManager.Instance.selectedItem = slotItem;
+        InventoryManager.Instance.selectedSlotID = slotID;
+
+        // 只有选中有效物品时，才显示公共USE按钮
+        InventoryManager.Instance.useButton.gameObject.SetActive(slotItem != null);
     }
 
     public void SetupSlot(Item item)
     {
-        if(item == null)
+        slotItem = item; // 给当前槽位的物品赋值
+        if (item == null)
         {
             ItemInSlot.SetActive(false);
+            slotInfo = "";
             return;
         }
 
+        ItemInSlot.SetActive(true);
         slotImage.sprite = item.itemIamge;
         slotNum.text = item.itemHeld.ToString();
         slotInfo = item.itemInfomation;
+      
     }
 }

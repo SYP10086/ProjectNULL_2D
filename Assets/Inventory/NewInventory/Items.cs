@@ -56,7 +56,7 @@ public class Items : MonoBehaviour
     //}
     Items()
     {
-        Debug.Log("Items");
+        
         Event.Start += new MyDel(ItemStart);
         Event.Save += new MyInt(Save);
         Event.Load += new MyInt(Load);

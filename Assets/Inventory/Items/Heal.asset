@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90f3cf729374eb84ea56d3c612abd138, type: 3}
-  m_Name: RecoveryPotion
+  m_Name: Heal
   m_EditorClassIdentifier: 
-  itemName: "\u56DE\u590D\u836F\u6C34"
-  itemIamge: {fileID: 0}
+  itemName: "\u836F\u4E38"
+  itemIamge: {fileID: 21300000, guid: b79655b09fd01a7448382b76e179ffad, type: 3}
   itemHeld: 0
-  itemInfomation: "\u53EF\u4EE5\u56DE\u590D\u4E00\u5B9A\u751F\u547D\u503C"
+  itemInfomation: "\u5947\u602A\u7684\u836F\u4E38\uFF0C\u53EF\u4EE5\u56DE\u590D30\u751F\u547D\u503C"
   equip: 0
+  itemType: 0
+  effectValue: 30

@@ -459,6 +459,7 @@ MonoBehaviour:
   slotNum: {fileID: 930269988645094593}
   ItemInSlot: {fileID: 3899169972835056219}
   slotInfo: 
+  useButton: {fileID: 0}
 --- !u!225 &8584194579029896182
 CanvasGroup:
   m_ObjectHideFlags: 0

@@ -15,28 +15,44 @@ public class ItemOnWorld : MonoBehaviour
         {
             AddNewItem();//添加物品（函数）
             Destroy(gameObject);//并破坏，使其在地图上消失
+            // 强制刷新背包显示
+            InventoryManager.RefreshItem();
         }
     }
 
-    private void AddNewItem()//添加物品的函数
+    // 将道具添加到玩家背包
+    // 将道具添加到玩家背包（修复：不实例化，直接修改原始Item）
+    private void AddNewItem()
     {
-        if(!PlayerInventory.itemList.Contains(thisItem))//如果玩家背包里没有该物品
+        bool added = false;
+
+        // 第一步：尝试叠加到已有相同道具
+        for (int i = 0; i < PlayerInventory.itemList.Count; i++)
         {
-            //PlayerInventory.itemList.Add(thisItem);//玩家背包里添加该物品
-            //InventoryManager.CreateNewItem(thisItem);
-            for(int i = 0; i < PlayerInventory.itemList.Count; i++)
+            Item existingItem = PlayerInventory.itemList[i];
+            // 只匹配原始Item（避免实例化导致的类型问题）
+            if (existingItem != null && existingItem == thisItem)
+            {
+                existingItem.itemHeld++;
+                added = true;
+                break;
+            }
+        }
+
+        // 第二步：没有相同道具，添加到空槽位（直接添加原始Item）
+        if (!added)
+        {
+            for (int i = 0; i < PlayerInventory.itemList.Count; i++)
             {
                 if (PlayerInventory.itemList[i] == null)
                 {
+                    // 取消Instantiate，直接赋值原始Item
+                    thisItem.itemHeld = 1;
                     PlayerInventory.itemList[i] = thisItem;
+                    added = true;
                     break;
                 }
             }
         }
-        else//如果已经有了该物品
-        {
-            thisItem.itemHeld += 1;//则物品持有量加1
-        }
-        InventoryManager.RefreshItem();//只要添加物品，就执行此函数。每次拾取物体就刷新背包
     }
 }

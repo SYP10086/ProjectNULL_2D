@@ -19,5 +19,6 @@ public class Bag : MonoBehaviour
             IsOpen = !IsOpen;
             MyBag.SetActive(IsOpen);
         }
+        InventoryManager.RefreshItem();
     }
 }

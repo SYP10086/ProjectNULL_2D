@@ -13,4 +13,11 @@ public class Item : ScriptableObject
     [TextArea]//让物品描述可以无限长，而不是仅局限于一行
     public string itemInfomation;//物品描述
     public bool equip;//是否装备
+
+    // 添加道具类型
+    public enum ItemType { HealthPill, HealthMax, Attack, SpeedUp }
+    public ItemType itemType;
+
+    // 道具效果值
+    public float effectValue;
 }
