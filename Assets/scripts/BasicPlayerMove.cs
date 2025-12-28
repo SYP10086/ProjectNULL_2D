@@ -14,14 +14,15 @@ public class BasicPlayerMove : MonoBehaviour
 
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>(); 
+        rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         UpdateAnimDir(lastMoveDir);
 
     }
     private void Update()
     {
-        if (Input.GetKeyDown(attackKey) && !isAttacking){
+        if (Input.GetKeyDown(attackKey) && !isAttacking)
+        {
             Attack();
         }
     }
@@ -33,7 +34,7 @@ public class BasicPlayerMove : MonoBehaviour
         movementInput.y = Input.GetAxisRaw("Vertical");
 
         movementInput = movementInput.normalized;
-        anim.SetFloat("Horizontal",movementInput.x);
+        anim.SetFloat("Horizontal", movementInput.x);
         anim.SetFloat("Vertical", movementInput.y);
         anim.SetFloat("MoveSpeed", movementInput.magnitude);
 
@@ -41,7 +42,7 @@ public class BasicPlayerMove : MonoBehaviour
 
         bool isMoving = movementInput.magnitude > 0;
         anim.SetBool("IsMoving", isMoving);
-        if(isMoving)
+        if (isMoving)
         {
             lastMoveDir = movementInput;
             UpdateAnimDir(lastMoveDir);
@@ -59,7 +60,7 @@ public class BasicPlayerMove : MonoBehaviour
     private void Attack()
     {
         isAttacking = true;
-        anim.SetBool("IsAttacking",true);
+        anim.SetBool("IsAttacking", true);
         Invoke("ResetAttackState", 1.0f);
     }
     private void ResetAttackState()
