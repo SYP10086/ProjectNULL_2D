@@ -5,16 +5,55 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Temporary.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: c25c5f946e3add74eac09e10514d52d5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Sence1.unity
     guid: fc8223df3a16dad44821a22db52a0213
-  - enabled: 1
-    path: Assets/Scenes/Sence2.unity
+  - enabled: 0
+    path: Assets/Scenes/sENCE2.unity
     guid: 5ca96265206452149bdda883f8b431e4
+  - enabled: 1
+    path: Assets/Scenes/FirstScene.unity
+    guid: bcde1a3586be4a74fbb6beffe837d5a8
+  - enabled: 1
+    path: Assets/Scenes/SecondScene.unity
+    guid: 0deea1cd07fe7844f860aaf50b2a665b
+  - enabled: 1
+    path: Assets/Scenes/ThirdScene.unity
+    guid: b495261a9d85aa149924f65dc97a60aa
+  - enabled: 1
+    path: Assets/Scenes/ForthScene.unity
+    guid: 96cc01cf2f32e11449cc8347eb803e9d
+  - enabled: 1
+    path: Assets/Scenes/FifthScene.unity
+    guid: 21b5aed95af13cb419880311f33c7d83
+  - enabled: 1
+    path: Assets/Scenes/SixthScene.unity
+    guid: 9a2d0d1624eee2c49bec4af07171f56c
+  - enabled: 1
+    path: Assets/Scenes/SevenScene.unity
+    guid: d8d90cfca83db294c8ef8ea27f6eca55
+  - enabled: 1
+    path: Assets/Scenes/EighthScene.unity
+    guid: dc69bb19a05b9a04394cd51eec77159e
+  - enabled: 1
+    path: Assets/Scenes/TwelfthScene.unity
+    guid: d51f5de968e549a42b902c435bef2060
+  - enabled: 1
+    path: Assets/Scenes/FoxBattle.unity
+    guid: ada4860c01199d444b3a6a54d5775115
+  - enabled: 1
+    path: Assets/Scenes/FoxEnd.unity
+    guid: 5ffb9feb327e6e04cb08f166fb9be1e3
+  - enabled: 1
+    path: Assets/Scenes/TreeBattle.unity
+    guid: 6f2829de99e9a244b90151770e7ee84c
+  - enabled: 1
+    path: Assets/Scenes/TreeEnd.unity
+    guid: 2a7072a6243a954499ab95cdcda3c666
   m_configObjects: {}
