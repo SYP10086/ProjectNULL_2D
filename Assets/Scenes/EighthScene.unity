@@ -5572,7 +5572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69140ab1986645e4e95c9382ccae56f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: SeventhScene
+  targetSceneName: SevenScene
   targetSpawnPosition: {x: 20.13, y: 9.45, z: 0}
   playerTag: Player
 --- !u!61 &1862640045
