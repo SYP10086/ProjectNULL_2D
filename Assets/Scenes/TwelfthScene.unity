@@ -3313,7 +3313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69140ab1986645e4e95c9382ccae56f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: TreeBattle
+  targetSceneName: HumanEnd
   targetSpawnPosition: {x: -0.1, y: 0.1, z: 0}
   playerTag: Player
 --- !u!61 &1363908620
