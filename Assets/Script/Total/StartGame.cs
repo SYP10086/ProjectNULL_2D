@@ -6,10 +6,16 @@ using UnityEngine.UI;
 
 public class StartGame : AllNeed
 {
+    private void Awake()
+    {
+        Time.timeScale =0;
+    }
     public void StartNewGame()
     {
-        SceneManager.LoadScene("Sence1");
+        Time.timeScale = 1;
+        PlayerMain.haveGravity = false;
         Event.Start?.Invoke();
+        SceneManager.LoadScene("FirstScene");
     }
 
 }

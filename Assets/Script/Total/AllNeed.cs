@@ -21,32 +21,43 @@ public class AllNeed : MonoBehaviour
     }
     protected void HideFirstUI()
     {
-            if (startUI != null)
+        if (startUI == null) 
+        startUI = GameObject.Find("StartUI");
+        if (startUI != null)
                 startUI.SetActive(false);
     }
     protected void ShowFirstUI()
     {
-            if (startUI != null)
+        if (startUI == null)
+            startUI = GameObject.Find("StartUI");
+        if (startUI != null)
                 startUI.SetActive(true);
     }
     protected void HideSetingUI()
     {
-
+        if (settingUI == null)
+            settingUI = GameObject.Find("SettingMenu");
         if (settingUI != null)
             settingUI.SetActive(false);
     }
     protected void ShowSetingUI()
     {
+        if (settingUI == null)
+            settingUI = GameObject.Find("SettingMenu");
         if (settingUI != null)
             settingUI.SetActive(true);
     }
     protected void ShowSLmenu()
     {
+        if (SLmenu == null)
+            SLmenu = GameObject.Find("SLMenu");
         if (SLmenu != null)
             SLmenu.SetActive(true);
     }
     protected void HideSLmenu()
     {
+        if (SLmenu == null)
+            SLmenu = GameObject.Find("SLMenu");
         if (SLmenu != null)
             SLmenu.SetActive(false);
     }

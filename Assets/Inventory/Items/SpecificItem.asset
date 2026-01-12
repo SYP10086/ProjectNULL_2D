@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f3cf729374eb84ea56d3c612abd138, type: 3}
   m_Name: SpecificItem
   m_EditorClassIdentifier: 
-  itemName: "\u52C7\u6C14\u5FA1\u5B88"
+  itemName: "\u7279\u6B8A\u836F\u6C34"
   itemIamge: {fileID: 21300000, guid: 950951db5e59f4f4f972253afe34ef0b, type: 3}
   itemHeld: 0
-  itemInfomation: "\u4F60\u5145\u6EE1\u4E86\u52C7\u6C14\uFF0C\u751F\u547D\u4E0A\u9650\u589E\u52A050"
+  itemInfomation: "\u4E0D\u540C\u4E8E\u751F\u547D\u836F\u6C34\uFF0C\u5B83\u53EF\u4EE5\u63D0\u5347\u751F\u547D\u503C\u4E0A\u9650"
   equip: 0
   itemType: 1
-  effectValue: 50
+  effectValue: 20

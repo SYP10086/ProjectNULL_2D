@@ -32,6 +32,8 @@ public class Death : MonoBehaviour
     public void PressIt()
     {
         if (!PlayerMain.death) return;
+        PlayerMain.nowHealthy=1;
+        PlayerMain.death=false;
         SceneManager.LoadScene("Start");
     }
 }

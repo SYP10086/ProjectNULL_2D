@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml;
 using Unity.Burst.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,13 +10,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMain : MonoBehaviour
 {
-    public bool haveGravity = false;//控制有无重力,地面laywer为Wall
-    public float jumpSpeed = 10;
+    public static bool haveGravity = false;//控制有无重力,地面laywer为Wall
     public static float healthy = 100;
     public static float nowHealthy = 100;
     public static float stamina = 100;
     public static float nowStamina = 100;
-    public static float attackDamage = 20, attackTime, attackLimit = 0.4f;
+    public static float attackDamage = 20, attackTime, attackLimit = 1f;
     public static float backAttack = 2;
     public float shiftPower = 1.5f, shiftLose = 0.7f;
     public float staminaIncrease = 20, staminaDecrease = 20, staminaEDIncrease = 15, ReWait = 1;
@@ -26,12 +26,14 @@ public class PlayerMain : MonoBehaviour
     public static bool initLocation = false;
     //
     static Rigidbody2D rb;
-    public static float speed = 10;
-    public static float speedthis = 4;
+    public static float speed = 4;
+    public static float speedthis = speed;
     public static bool death, attack, canShifit = true;
     public static Vector3 clickPoint;
     GameObject Hand;
+    BasicPlayerMove basicPlayerMove;
     float waitDebug;
+    public float g = 1,j=1;
     void ItemUse()
     {
         string A=null;
@@ -69,10 +71,13 @@ public class PlayerMain : MonoBehaviour
     }
     void SpeedClear()
     {
+        Time.timeScale = 0;
+        speedthis =( speed==0)? speedthis:speed;
         speed = 0;
     }
     void SpeedRe()
     {
+        Time.timeScale = 1;
         speed = speedthis;
     }
     ~PlayerMain()
@@ -89,14 +94,19 @@ public class PlayerMain : MonoBehaviour
     }
     void Start()
     {
+        basicPlayerMove=GetComponent<BasicPlayerMove>();
         transform =GetComponent<Transform>();
         rb = GetComponent<Rigidbody2D>();
         Hand = GameObject.Find("Player/Hand");
         speed = speedthis;
     }
+    
     void Update()
     {
-        
+        scene= SceneManager.GetActiveScene();
+        if (scene.name!= "FoxBattle"&& scene.name != "TreeBattle")
+            haveGravity=false;
+        else haveGravity=true;
         if (!initLocation&&(x!=0||y!=0))
         {
             transform.position=new Vector2 (x,y);
@@ -111,20 +121,16 @@ public class PlayerMain : MonoBehaviour
     }
     private void LateUpdate()
     {
-        rb.gravityScale = haveGravity ? 1 : 0;
+        rb.gravityScale = haveGravity ? g : 0;
         Move();
         MoveWithGravity();
     }
     void MoveWithGravity()
     {
+        if (attack) return;
         if (!haveGravity) return;
-        float xv = Input.GetAxis("Horizontal");
-        Vector3 movement = new Vector3(xv, 0, 0);
-        if (movement.magnitude > 1)
-        {
-            movement.Normalize();
-        }
-        xv = movement.x;
+        float xv = Input.GetAxis("Horizontal")*2;
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) xv = 0;
         if (nowStamina < 0)
         {
             canShifit = false;
@@ -186,22 +192,27 @@ public class PlayerMain : MonoBehaviour
             }
         }
         //Jump
-        Collider2D collider=GetComponent<Collider2D>();
-        RaycastHit2D hit1 = Physics2D.Raycast(transform.position+new Vector3(collider.bounds.size.x/2,0,0), new Vector2(0, -1), collider.bounds.size.y / 2 + 0.2f, LayerMask.GetMask("Wall") + LayerMask.GetMask("Monster"));
-        RaycastHit2D hit2 = Physics2D.Raycast(transform.position - new Vector3(collider.bounds.size.x / 2, 0, 0), new Vector2(0, -1), collider.bounds.size.y/2+0.2f,LayerMask.GetMask("Wall")+ LayerMask.GetMask("Monster"));
-        if (hit1|| hit2)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + jumpSpeed);
-            }
-        }
+        //Collider2D collider=GetComponent<Collider2D>();
+        //RaycastHit2D hit1 = Physics2D.Raycast(collider.transform.position+new Vector3(collider.bounds.size.x/2,0,0), new Vector2(0, -1), collider.bounds.size.y / 2 + j, LayerMask.GetMask("Wall") + LayerMask.GetMask("Monster"));
+        //RaycastHit2D hit2 = Physics2D.Raycast(collider.transform.position - new Vector3(collider.bounds.size.x / 2, 0, 0), new Vector2(0, -1), collider.bounds.size.y/2+j,LayerMask.GetMask("Wall")+ LayerMask.GetMask("Monster"));
+        //if (hit1|| hit2)
+        //{
+        //    if (Input.GetKey(KeyCode.Space))
+        //    {
+        //        rb.velocity = new Vector2(rb.velocity.x, speed*5);
+        //    }
+        //}
 
     }
     private void Move()
     {
+        rb.velocity = new Vector2(0,0);
+        if (attack ) return;
         if (haveGravity) return;
+        
         float xv = Input.GetAxis("Horizontal"), yv = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.D)) xv = 0;
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.S)) yv = 0;
         Vector3 movement = new Vector3(xv, 0, yv);
         if (movement.magnitude > 1)
         {
@@ -292,13 +303,15 @@ public class PlayerMain : MonoBehaviour
         {  return; }
         Event.CleanSpeed();
         death = true;
+        Time.timeScale = 0;
         Event.Death();
         Death.ShowDeath();
     }
     void Attack()
     {
-        if(Input.GetMouseButtonDown(0)&&!attack&&speed!=0)
-        { 
+        if (basicPlayerMove== null) return;
+        if(Input.GetKeyDown(basicPlayerMove.attackKey)&&!attack&&speed!=0)
+        {
             clickPoint =Input.mousePosition;
             attack = true;
             Weapon.inIt = false;

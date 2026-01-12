@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 
 public delegate void MyDel();
@@ -9,6 +10,7 @@ public delegate void MyInt(int a);
 public delegate void MyStr(string a);
 public static class Event
 {
+    public static bool Open=true;
     public static MyDel CleanSpeed;
     public static MyDel SpeedRe;
     public static MyDel Death;

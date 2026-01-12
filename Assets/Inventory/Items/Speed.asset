@@ -18,4 +18,4 @@ MonoBehaviour:
   itemInfomation: "\u5F88\u663E\u7136\uFF0C\u53EF\u4EE5\u589E\u52A0\u901F\u5EA6"
   equip: 0
   itemType: 3
-  effectValue: 0
+  effectValue: 1

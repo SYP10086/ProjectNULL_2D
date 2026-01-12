@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90f3cf729374eb84ea56d3c612abd138, type: 3}
   m_Name: PowerPotion
   m_EditorClassIdentifier: 
-  itemName: "\u51B3\u5FC3\u5FA1\u5B88"
+  itemName: "\u529B\u91CF\u836F\u6C34"
   itemIamge: {fileID: 21300000, guid: 11e4bee69cf50cd4d9019282a297771f, type: 3}
   itemHeld: 0
-  itemInfomation: "\u770B\u5230\u8FD9\u4E2A\u5FA1\u5B88\uFF0C\u4F60\u5145\u6EE1\u4E86\u51B3\u5FC3\uFF0C\u653B\u51FB\u529B\u63D0\u534710"
+  itemInfomation: "\u63D0\u5347\u4E00\u5B9A\u653B\u51FB\u529B"
   equip: 0
   itemType: 2
   effectValue: 10

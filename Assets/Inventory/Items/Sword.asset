@@ -17,5 +17,3 @@ MonoBehaviour:
   itemHeld: 0
   itemInfomation: "\u8FD9\u662F\u6751\u91CC\u6700\u597D\u7684\u5251"
   equip: 0
-  itemType: 0
-  effectValue: 0

@@ -16,9 +16,13 @@ public static  class Load
     {
                 InputField.Place = PlayerPrefs.GetString($"Place{SaveNumber}", "NoThisPlace");
                 PlayerMain.healthy = PlayerPrefs.GetFloat($"Healthy{SaveNumber}", 100f);
-                PlayerMain.stamina = PlayerPrefs.GetFloat($"Stamina{SaveNumber}", 100f);
+        PlayerMain.nowHealthy = PlayerMain.healthy;
+        PlayerMain.stamina = PlayerPrefs.GetFloat($"Stamina{SaveNumber}", 100f);
+        PlayerMain.nowStamina = PlayerMain.stamina;
                 PlayerMain.y =PlayerPrefs.GetFloat($"transform.position.y{SaveNumber}", 0);
                 PlayerMain.x = PlayerPrefs.GetFloat($"transform.position.x{SaveNumber}", 0);
+        PlayerMain.attackDamage=PlayerPrefs.GetFloat($"attackDamage{SaveNumber}",10);
+        PlayerMain.speedthis = PlayerPrefs.GetFloat($"speed{SaveNumber}", 20);
     }
     public static void LoadItem(int SaveNumber)
     {

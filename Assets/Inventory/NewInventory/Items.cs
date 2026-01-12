@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class Items : MonoBehaviour
 {
@@ -21,6 +20,7 @@ public class Items : MonoBehaviour
         myItems = MyBag.itemList;
         foreach (Item item in myItems)
         {
+            if (item == null) continue;
             itemName = item.itemName;
             item.itemHeld = 0;
             item.equip = false;
@@ -56,7 +56,7 @@ public class Items : MonoBehaviour
     //}
     Items()
     {
-        
+        Debug.Log("Items");
         Event.Start += new MyDel(ItemStart);
         Event.Save += new MyInt(Save);
         Event.Load += new MyInt(Load);

@@ -14,11 +14,11 @@ public class Save0 : MonoBehaviour
     static protected TMP_Text[] buttonText=new TMP_Text[9];
     public static int Number;//the number of sellscted
     int i;//Each button local number
-    private void Start()
+    private void Awake()
     {
         button = GetComponent<Button>();
         i = int.Parse(button.name.Substring(4, 1));
-        buttonText[i-1] = button.GetComponentInChildren<TMP_Text>();
+        buttonText[i - 1] = button.GetComponentInChildren<TMP_Text>();
     }
     public void PressButton()
     {
@@ -28,15 +28,16 @@ public class Save0 : MonoBehaviour
             InputField.showInput = true;
             InputField.inputFieldPrefab.SetActive(true);
             Number = i;
+            Debug.Log(InputField.inputFieldPrefab.GetComponent<TMP_InputField>());
             SetInput();
         }
     }
     void SetInput()
     {
         if (buttonText[Number - 1].text != "¿Õ")
-            InputField.inputField.text = PlayerPrefs.GetString($"saveName{Number}", "¿Õ");
+            InputField.inputFieldPrefab.GetComponent<TMP_InputField>().text = PlayerPrefs.GetString($"saveName{Number}", "¿Õ");
         else
-            InputField.inputField.text = "ÇëÊäÈë´æµµÃû×Ö(ÃüÃûÎª¡°¿Õ¡±»áÉ¾³ı´æµµ)";
+            InputField.inputFieldPrefab.GetComponent<TMP_InputField>().text = "ÇëÊäÈë´æµµÃû×Ö(ÃüÃûÎª¡°¿Õ¡±»áÉ¾³ı´æµµ)";
     }
     protected void SetSaveName()
     {

@@ -119,8 +119,7 @@ public class InventoryManager : MonoBehaviour
                 break;
             case Item.ItemType.Attack:
                 // 增加体力上限，同步当前体力
-                PlayerMain.stamina += selectedItem.effectValue;
-                PlayerMain.nowStamina = PlayerMain.stamina;
+                PlayerMain.attackDamage += selectedItem.effectValue;
                 break;
             case Item.ItemType.SpeedUp:
                 // 增加移动速度

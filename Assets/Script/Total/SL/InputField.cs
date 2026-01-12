@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,26 +9,24 @@ using UnityEngine.UI;
 public class InputField : Save0
 {
     public static string Place;
-    public static TMP_InputField inputField;
+    public static TMP_InputField inputField; 
     public static bool showInput;
     public static GameObject inputFieldPrefab;
     Scene scene;
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         inputFieldPrefab = GameObject.Find("InputField (TMP)");
-        inputField =GetComponent<TMP_InputField>();
-        showInput=false;
+        inputField = GetComponent<TMP_InputField>();
+        showInput = false;
     }
-
     // Update is called once per frame
     void Update()
     {
         if (!showInput)
         {
             inputFieldPrefab.SetActive(false);
-        }
-            
+        }  
     }
     public void CancelTheCreate()
     {
@@ -40,9 +37,9 @@ public class InputField : Save0
     
     public void CheckInput()
     {
-        if (!string.IsNullOrEmpty(inputField.text))
+        if (!string.IsNullOrEmpty(inputFieldPrefab.GetComponent<TMP_InputField>().text ?? null))
         {
-           saveName = inputField.text;
+           saveName = inputFieldPrefab.GetComponent<TMP_InputField>().text;
             
             SetSaveName();
             scene = SceneManager.GetActiveScene();

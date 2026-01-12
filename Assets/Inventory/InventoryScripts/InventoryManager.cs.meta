@@ -3,7 +3,13 @@ guid: f87d6c4d3d617bc418b566a29888fba3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MyBag: {instanceID: 0}
+  - slotGrid: {instanceID: 0}
+  - emptySlot: {instanceID: 0}
+  - itemInfromation: {instanceID: 0}
+  - useButton: {instanceID: 0}
+  - selectedItem: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

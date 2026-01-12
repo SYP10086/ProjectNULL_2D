@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class ControlMenu : AllNeed
 {
-    static public bool SaveOrLoad;
+    static public bool SaveOrLoad = false;
     ControlMenu()
     {
         Event.Death += new MyDel(OpenSLmenuInGameLoad);
@@ -33,13 +33,14 @@ public class ControlMenu : AllNeed
     {
         Event.CleanSpeed();
         SaveOrLoad = true;
+        PlayerMain.nowHealthy=PlayerMain.healthy;
+        PlayerMain.nowStamina=PlayerMain.stamina;
         ShowSLmenu();
     }
     public void CloseSLmenu()
     {
         ShowFirstUI();
         HideSLmenu();
-        
     }
     public void OpenSLmenu()
     {

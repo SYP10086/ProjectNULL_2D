@@ -16,9 +16,9 @@ TagManager:
   - UI
   - Monster
   - Wall
-  - 
-  - 
-  - 
+  - Foot
+  - Foot
+  - Fire
   - 
   - 
   - 
@@ -55,4 +55,7 @@ TagManager:
     locked: 0
   - name: player
     uniqueID: 3496596741
+    locked: 0
+  - name: COVER
+    uniqueID: 1560847375
     locked: 0

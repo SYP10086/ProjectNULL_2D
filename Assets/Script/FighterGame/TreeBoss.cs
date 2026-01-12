@@ -11,7 +11,7 @@ public class TreeBoss : MonoBehaviour
 
     [Header("·¶Î§ÅäÖÃ")]
     public float wakeRange = 4f;           // ËÕĞÑ·¶Î§£¨±È¹¥»÷·¶Î§´ó£©
-    public float attackRange = 8f;         // ÆÕÍ¨¹¥»÷·¶Î§
+    public float attackRange = 4f;         // ÆÕÍ¨¹¥»÷·¶Î§
     public float normalAttackDamage = 10f; // ÆÕÍ¨¹¥»÷ÉËº¦
 
     [Header("¹¥»÷ÀäÈ´")]
@@ -98,7 +98,10 @@ public class TreeBoss : MonoBehaviour
         if(currentHealth <= 0)
         {
             TriggerDeathAnimation();
+            BossEnd bossEnd=GameObject.Find("ControlDeliver").GetComponent<BossEnd>();
+            bossEnd.yes=true;
         }
+        Debug.Log("Bossµ±Ç°ÉúÃüÖµ"+currentHealth);
 
         
         
@@ -254,6 +257,7 @@ public class TreeBoss : MonoBehaviour
         if (currentHealth <= 0)
         {
             TriggerDeathAnimation();
+
         }
     }
 

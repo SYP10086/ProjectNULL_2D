@@ -39,6 +39,7 @@ public class SceneSwitchTrigger : MonoBehaviour
         Debug.Log($"[SceneSwitchTrigger] 存储出生点：{targetSpawnPosition}");
 
         // 2️⃣ 切场景（只一次）
+        Debug.Log(SceneFadeManager.Instance);
         SceneFadeManager.Instance.FadeAndLoadScene(targetSceneName);
     }
 

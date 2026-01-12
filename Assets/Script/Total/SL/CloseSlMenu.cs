@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class CloseSlMenu : AllNeed
 {
-    [SerializeField] bool SenceChange = false;
-
+    bool SenceChange = false;
+    
     void Update()
-    {
-
+    { 
         if (!SenceChange)
         {
             Event.SpeedRe?.Invoke();
             SenceChange = true;
             HideSLmenu(); 
         }
-
     }
 }

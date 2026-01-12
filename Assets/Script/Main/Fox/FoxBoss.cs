@@ -2,9 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
-using static UnityEditor.Experimental.AssetDatabaseExperimental.AssetDatabaseCounters;
 
 public class FoxBoss : MonoBehaviour
 {
@@ -19,7 +18,7 @@ public class FoxBoss : MonoBehaviour
     }
     Animator animator;
     public float chargeDistance = 4;
-    public double health=1000, nowHealth;
+    public double health=100, nowHealth;
     GameObject Player, mounster;
     GameObject[] fireBall=new GameObject[8];
     new string name;
@@ -30,6 +29,7 @@ public class FoxBoss : MonoBehaviour
     Vector3 pos,fireBallPos;
     bool StartCharge=false, haveAttack = false, canAttack=false;
     SpriteRenderer spriteRenderer;
+    bool death=false;
     //nowAnimation;//0–Ó¡¶,1≥Â
     void Hit(string a, float b)
     {
@@ -69,6 +69,9 @@ public class FoxBoss : MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(nowHealth);
+        if (nowHealth <= 0) death = true;
+        Death();
         time += Time.deltaTime;
         Stratage();
         rb.velocity = Vector3.zero;
@@ -100,8 +103,9 @@ public class FoxBoss : MonoBehaviour
     }
     void Stratage()
     {
+        if(death)return;
         if (speed == 0) return;
-        if (time <= 20)
+        if (time <= 8)
         {
             Attack();
         }
@@ -112,8 +116,9 @@ public class FoxBoss : MonoBehaviour
     }
     void MoveStratage()
     {
+        if (death) return;
         if (speed == 0) return;
-        if (time <= 20)
+        if (time <= 8)
         {
             MoveUp();
         }
@@ -183,5 +188,13 @@ public class FoxBoss : MonoBehaviour
         float damage = 20f + UnityEngine.Random.value * 3 * (UnityEngine.Random.value >= 0.5 ? 1 : -1);
         Event.Hit(damage);
         haveAttack = true;
+    }
+    void Death()
+    {
+        
+        if (!death) return;
+        Debug.Log("Death");
+        BossEnd bossEnd = GameObject.Find("ControlDeliver").GetComponent<BossEnd>();
+        bossEnd.yes = true;
     }
 }

@@ -6,18 +6,19 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     Vector2 weaponPos;
-    public float weaponDistance=1;
+    public float weaponDistance=10,C=10;
     GameObject weapon,player;
     public static bool inIt;
     Vector3 dir;
     double angle;
-    double attackAngle=180;
+    double attackAngle=90;
     bool haveAttack;
-    
+    BasicPlayerMove basicPlayerMove;
     private void Start()
     {
         weapon = GameObject.Find("Player/Hand");
         player = GameObject.Find("Player");
+        basicPlayerMove=player.GetComponent<BasicPlayerMove>();
     }
     private void LateUpdate()
     {
@@ -36,7 +37,13 @@ public class Weapon : MonoBehaviour
         transform.eulerAngles = new Vector3(0,0,angle2);
         if (!inIt)
         {
-            dir = new Vector3(Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).x,Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).y,0) - player.transform.position;
+            dir = basicPlayerMove.lastMoveDir;
+            float dot = Vector3.Dot(dir, Vector3.down);
+            if ( dot>=0.99)
+            {
+                dir = Vector3.left;
+            }
+            //dir = new Vector3(Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).x,Camera.main.ScreenToWorldPoint(PlayerMain.clickPoint).y,0) - player.transform.position;
             angle = Vector3.SignedAngle(Vector3.left, dir, Vector3.forward)+180;
             transform.localPosition =new Vector2(weaponDistance*(float)Math.Cos((angle+ attackAngle/2) * Mathf.Deg2Rad), weaponDistance*(float)Math.Sin((angle + attackAngle/2) * Mathf.Deg2Rad)) ;
             inIt = true;
@@ -50,9 +57,11 @@ public class Weapon : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        
         if (haveAttack || collision == null||collision.gameObject.layer != 6) return;
         float damage = PlayerMain.attackDamage + UnityEngine.Random.value * PlayerMain.attackDamage/10 * (UnityEngine.Random.value >= 0.5 ? 1 : -1);
         Event.Attack(collision.gameObject.name, damage);
+        
         haveAttack = true;
     }
 }

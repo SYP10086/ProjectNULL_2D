@@ -7,7 +7,7 @@ public class BasicPlayerMove : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator anim;
     private Vector2 movementInput;
-    private Vector2 lastMoveDir = Vector2.down;
+    public Vector2 lastMoveDir = Vector2.down;
     private bool isMoving;
     private bool isAttacking;
 
@@ -38,7 +38,7 @@ public class BasicPlayerMove : MonoBehaviour
         anim.SetFloat("Vertical", movementInput.y);
         anim.SetFloat("MoveSpeed", movementInput.magnitude);
 
-        rb2D.velocity = movementInput * moveSpeed;
+        //rb2D.velocity = movementInput * moveSpeed;
 
         bool isMoving = movementInput.magnitude > 0;
         anim.SetBool("IsMoving", isMoving);

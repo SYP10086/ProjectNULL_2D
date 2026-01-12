@@ -1,15 +1,20 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using System.Net.Http.Headers;
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.LowLevel;
+using UnityEngine.XR;
 
 public class Monster : MonoBehaviour
 {
-    public GameObject detect;
-    GameObject Player, mounster;
+    SpriteRenderer spriteRenderer;
+    Animator animator;
+    public GameObject detect, hand;
+    GameObject Player, mounster,foot,playerFoot;
     Rigidbody2D rb;
     RaycastHit2D hit;
     RaycastHit2D[] WallHit;
@@ -18,20 +23,23 @@ public class Monster : MonoBehaviour
     Vector3 PlayerLastLocation;
     bool HaveHit = false;
     public bool attack=false;
-    public float speed = 2, x, y, turnSpeed = 180;
+    public float speed = 1, x, y, turnSpeed = 180;
     public float attackTime = 0;
     public float dectectLong = 4;
-    public float detectAngle = 120;
+    public float detectAngle = 270;
     public float health1 = 50;
     float health = 1;
     bool StartMove = false;
+    public char tower='R';
+    double time=0;
+    bool death = false;
     void SpeedClear()
     {
         speed = 0;
     }
     void SpeedRe()
     {
-        speed = 2;
+        speed = 1;
     }
     void Hit(string a,float b)
     {
@@ -67,8 +75,13 @@ public class Monster : MonoBehaviour
     }
     void Start()
     {
+        playerFoot= GameObject.Find($"Player/Foot");
+        foot = GameObject.Find($"AllMonster/{this.gameObject.name}/FOOT");
+        animator =GetComponent<Animator>();
+        spriteRenderer =GetComponent<SpriteRenderer>();
         WallHit =new RaycastHit2D[8];
         detect = GameObject.Find($"{this.gameObject.name}/Detect");
+        hand = GameObject.Find($"{this.gameObject.name}/Hand");
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.Find("Player");
         Wall = LayerMask.GetMask("Wall");
@@ -80,6 +93,7 @@ public class Monster : MonoBehaviour
     }
     void Update()
     {
+        Debug.DrawRay(transform.position, transform.right, Color.red);
         Debug.DrawLine(rb.transform.position, Player.transform.position, Color.red);
         IfFindPlayer();
         SetTheScaleOfDetect();
@@ -87,19 +101,21 @@ public class Monster : MonoBehaviour
     }
     private void LateUpdate()
     {
+        UpdateAnimation();
         MoveTowerPlayer();
-        AwayWall();
+        //AwayWall();
         Death();
     }
     public void Init()
     {
+        time = 0;
         Debug.Log(name + " Init");
         HaveHit = false;
         StartMove = true;
         attack = false;
         health = health1;
-        rb.transform.position = new Vector2(x, y);
-        PlayerLastLocation = rb.transform.position + Vector3.up;
+        if(transform!=null)
+        transform.position = new Vector2(x, y);
     }
     public void Death()
     {
@@ -109,21 +125,30 @@ public class Monster : MonoBehaviour
         }
         else
         {
-            Debug.Log(mounster+ "SetActive(false)");
-            health =health1;
-            mounster.SetActive(false);
+            death = true;
+            hand.SetActive(false);
+            attack = true;
+            time += Time.deltaTime;
+            if(time>=2)
+            {
+                time = 0;
+                health =health1;
+                mounster.SetActive(false);
+                Debug.Log(mounster+ "SetActive(false)");
+            }
+            
         }
     }
     void Attack()
     {
-        Vector3 dir = Player.transform.position - transform.position;
-        float angle = (Vector3.SignedAngle(Vector3.left, dir, Vector3.forward) + 180);
-        angle = Math.Abs(angle - transform.eulerAngles.z) > 360 - Math.Abs(angle - transform.eulerAngles.z) ? ((angle - transform.eulerAngles.z > 0) ? angle - transform.eulerAngles.z - 360 : angle - transform.eulerAngles.z + 360) : angle - transform.eulerAngles.z;
-        if ((angle > -1 && angle < 1 && Vector3.Distance(rb.transform.position, Player.transform.position) < 1.7f)|| attack)
+        if (death) return;
+        double xd = playerFoot.transform.position.x - foot.transform.position.x;
+        Vector3 a = new Vector3(playerFoot.transform.position.x + (xd > 0 ? -0.9F : 0.9F), playerFoot.transform.position.y + 0.11f, 0);
+        if (( Vector3.Distance(foot.transform.position, a) < 0.1f)|| attack)
         {
             attack = true;
             attackTime += Time.deltaTime;
-            if (attackTime >=1)
+            if (attackTime >=1.4f)
             {
                 attack = false;
                 attackTime = 0;
@@ -164,49 +189,52 @@ public class Monster : MonoBehaviour
     }
     void MoveTowerPlayer()//////
     {
+        if (death) return;
         rb.velocity = Vector3.zero;
         rb.angularVelocity= 0;
         if (!StartMove) return;
         if (attack) return;
         if (!HaveHit)
         {
-            Vector3 dir = Player.transform.position - transform.position;
-            float angle = (Vector3.SignedAngle(Vector3.left, dir, Vector3.forward) + 180);
-            angle = Math.Abs(angle - transform.eulerAngles.z) > 360 - Math.Abs(angle - transform.eulerAngles.z) ? ((angle - transform.eulerAngles.z > 0) ? angle - transform.eulerAngles.z - 360 : angle - transform.eulerAngles.z + 360) : angle - transform.eulerAngles.z;
-            if (angle >= 1)
-                transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
-            else if (angle <= -1)
-                transform.Rotate(0, 0, -turnSpeed * Time.deltaTime);
-            rb.transform.position = Vector3.MoveTowards(rb.transform.position, Player.transform.position, speed * Time.deltaTime);
+            Vector3 dir = playerFoot.transform.position - foot.transform.position;
+            double xd = playerFoot.transform.position.x - foot.transform.position.x;
+            double dis = Vector3.Distance(foot.transform.position, transform.position);
+            Vector3 a = new Vector3(playerFoot.transform.position.x + (xd > 0 ? -0.9F : 0.9F), playerFoot.transform.position.y+(float)dis+0.11f, 0);
+            rb.transform.position = Vector3.MoveTowards(rb.transform.position, a, speed * Time.deltaTime);
         }
-        else if (HaveHit)
-        {
-            Vector3 dir = PlayerLastLocation - transform.position;
-            float angle = (Vector3.SignedAngle(Vector3.left, dir, Vector3.forward) + 180);
-            angle = Math.Abs(angle - transform.eulerAngles.z) > 360 - Math.Abs(angle - transform.eulerAngles.z) ? ((angle - transform.eulerAngles.z > 0) ? angle - transform.eulerAngles.z - 360 : angle - transform.eulerAngles.z + 360) : angle - transform.eulerAngles.z;
-            if (angle >= 1)
-                transform.Rotate(0, 0, turnSpeed * Time.deltaTime);
-            else if (angle <= -1)
-                transform.Rotate(0, 0, -turnSpeed * Time.deltaTime);
-            rb.transform.position = Vector3.MoveTowards(rb.transform.position, PlayerLastLocation, speed * Time.deltaTime);
-            if (Vector3.Distance(rb.transform.position, PlayerLastLocation) < 0.1f && angle>-1&& angle<1)
-            {
-                HaveHit = false;
-                StartMove = false;
-            }
-        }
+        //else if (HaveHit)
+        //{
+        //    double dis = Vector3.Distance(foot.transform.position, transform.position);
+        //    rb.transform.position = Vector3.MoveTowards(rb.transform.position, PlayerLastLocation+new Vector3(0, (float)dis+0.11f, 0), speed * Time.deltaTime);
+        //    if (Vector3.Distance(rb.transform.position, PlayerLastLocation) < 0.1f)
+        //    {
+        //        HaveHit = false;
+        //        StartMove = false;
+        //    }
+        //}
     }
     void IfFindPlayer()
     {
-        
-        hit = Physics2D.Raycast(rb.transform.position, Player.transform.position- rb.transform.position, Mathf.Infinity, Wall +LayerMask.GetMask("Player"));
+        if(death)return;
+        hit = Physics2D.Raycast(foot.transform.position, playerFoot.transform.position- foot.transform.position, dectectLong, Wall+LayerMask.GetMask("Player"));
 
         if (hit) 
         {
-            float angle = Vector3.Angle(Player.transform.position-transform.position , transform.right);
-            if (hit.collider.name=="Player"&& hit.distance< dectectLong&& angle < detectAngle/2)
+            float angle = Vector3.Angle(playerFoot.transform.position- foot.transform.position , transform.right);
+            
+            if (hit.collider.name=="Player"&& hit.distance< dectectLong)
             {
-                PlayerLastLocation = hit.point;
+                if (angle >= 90) 
+                {
+                    tower = 'L';
+                }
+                else
+                {
+                    tower = 'R';
+                }
+                double xd = playerFoot.transform.position.x - foot.transform.position.x;
+                Vector3 a = new Vector3(playerFoot.transform.position.x + (xd > 0 ? -0.9F : 0.9F), playerFoot.transform.position.y, 0);
+                PlayerLastLocation = a;
                 HaveHit = false;
                 StartMove =true;
             }
@@ -215,5 +243,16 @@ public class Monster : MonoBehaviour
                 HaveHit = true;
             }
         } 
+    }
+    void UpdateAnimation()
+    {
+        if (health > 0) { 
+        if (tower == 'L') spriteRenderer.flipX = true;
+        else spriteRenderer.flipX = false;
+        }
+        animator.SetBool("Range", StartMove);
+        animator.SetBool("PlayerInAttackRange", attack);
+        animator.SetFloat("Healthy", health);
+        animator.SetBool("Direction", UnityEngine.Random.value>0.5);
     }
 }

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
@@ -52,7 +51,7 @@ public class FireBall : MonoBehaviour
     {
         if(collision.gameObject.name=="Player")
         {
-            float damage = 20f + UnityEngine.Random.value * 3 * (UnityEngine.Random.value >= 0.5 ? 1 : -1);
+            float damage = 10f + UnityEngine.Random.value * 3 * (UnityEngine.Random.value >= 0.5 ? 1 : -1);
             Event.Hit(damage);
             init = false;
             this.gameObject.SetActive(false);
